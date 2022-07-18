@@ -16,11 +16,20 @@ body {
 }
 
 .bg-home {
-  background-image: url("images/mountains-universe-1 1.png");
-  background-repeat: no-repeat;
-  background-size: fill;
+  background-image: url("images/mountains-universe-1.png");
+  background-size: cover
+}
+/*
+.bg-universo {
+  background-image: url("images/mountains-universe02.png");
+  background-size: cover;
 }
 
+.bg-exploracao {
+  background-image: url("images/mountains-universe-3.png");
+  background-size: cover;
+}
+*/
 .logo-cima {
   display: none;
 }
@@ -121,6 +130,20 @@ main.universo-exploracao p {
   color: #E1E1E6;
 }
 
+
+@media screen and (max-width: 1050px) {
+  .bg-home {
+    background-size: auto;
+  }
+  
+  .bg-universo {
+    background-size: auto;
+  }
+  
+  .bg-exploracao {
+    background-size: auto;
+  }
+}
 
 @media screen and (max-width: 992px) {
   header nav {
