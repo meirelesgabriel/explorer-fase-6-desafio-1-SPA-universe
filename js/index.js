@@ -33,6 +33,30 @@ function handle() {
     page.innerHTML = html
   })
 
+  // para mudar a imagem de fundo
+  switch(pathname) {
+    case '/':
+      document.body.classList.add('bg-home')
+      document.body.classList.remove('bg-universo')
+      document.body.classList.remove('bg-exploracao')
+      break;
+    case '/universo':
+      document.body.classList.add('bg-universo')
+      document.body.classList.remove('bg-home')
+      document.body.classList.remove('bg-exploracao')
+      break;
+    case '/exploracao':
+      document.body.classList.add('bg-exploracao')
+      document.body.classList.remove('bg-home')
+      document.body.classList.remove('bg-universo')
+      break;
+    default:
+      document.body.classList.add('bg-home')
+      document.body.classList.remove('bg-universo')
+      document.body.classList.remove('bg-exploracao')
+      break;
+  }
+
 }
 
 function queroSaberMais() {
@@ -50,6 +74,10 @@ function queroSaberMais() {
 
   //atualiza a url:
   window.history.pushState({}, '', '/universo')
+
+  document.body.classList.add('bg-universo')
+  document.body.classList.remove('bg-home')
+  document.body.classList.remove('bg-exploracao')
 }
 
 handle()

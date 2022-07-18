@@ -19,7 +19,7 @@ body {
   background-image: url("images/mountains-universe-1.png");
   background-size: cover
 }
-/*
+
 .bg-universo {
   background-image: url("images/mountains-universe02.png");
   background-size: cover;
@@ -29,7 +29,7 @@ body {
   background-image: url("images/mountains-universe-3.png");
   background-size: cover;
 }
-*/
+
 .logo-cima {
   display: none;
 }
